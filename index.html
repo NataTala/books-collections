@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Колекція книг</h1>
+        </header>
+        <main class="main">
+           <div class="aside">
+            <img class="img-aside" src="img/book-side-l.jpg" alt="">
+           </div>
+           <div class="main-content">
+                <h2>Додати / шукати книги</h2>
+                <form class="add-form">
+                    <div class="input-box">
+                        <input type="text" placeholder="Назва*" class="add-form-title" data-required="true">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Автор*" class="add-form-author" data-required="true">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Жанр" class="add-form-genre">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Видавництво" class="add-form-publish">
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-add">Додати книгу</button>
+                        <button class="btn-search">Шукати книгу</button>
+                        <button class="btn-back none">Всі книги</button>
+                    </div>
+                </form>
+                <div class="sort-box">
+                    <h3 class="sort-title">Сортувати книги:</h3>
+                    <div class="btn-box">
+                        <button class="btn-sort" id="sort-up">За алфавітом</button>
+                        <button class="btn-sort" id="sort-down">У зворотньому порядку</button>
+                    </div>   
+                </div>
+                
+                <div class="list-box">
+                    <h3 class="list-box-title">Список книг</h3>
+                    <div class="list-book-title">
+                        <div class="book-title">Назва книги</div>
+                        <div class="book-author">Автор</div>
+                        <div class="book-genre">Жанр</div>
+                        <div class="book-publish">Видавництво</div>
+                    </div>
+                    <div class="list">
+                         <!-- generate in js -->
+                    <!-- <div class="item-flex">
+                        <div class="list-item">
+                            <div class="item-title">1984</div>
+                            <div class="item-author">Джордж Оруэлл</div>
+                            <div class="item-genre">Антиутопія</div>
+                            <div class="item-publish">Новий світ</div>
+                        </div>
+                        <div class="list-btn">
+                            <button><img src="img/edit.png" alt=""></button>
+                            <button><img src="img/bin_del.png" alt=""></button>
+                        </div> 
+                    </div> -->
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul class="pagination-list"></ul>
+                </div>
+
+           </div>
+
+           <div class="aside">
+                <img class="img-aside" src="img/book-side-r.jpg" alt="">
+           </div> 
+        </main>
+
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
